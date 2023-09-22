@@ -185,4 +185,6 @@ Bu dokumentatsiya Onest filtrlarini ishlatish haqida ma'lumotlar taqdim etadi.
         }
 ```
 
-_Eslatma!:_ Agar siz shu operatorlarning urniga  boshqa operator ishlatsayiz  [**"Unsupported filter operation!"** ] degan hatolik olasiz.
+_Eslatma!:_ Agar siz shu operatorlarning urniga  boshqa operator ishlatsayiz  [**"Unsupported filter operation!"** ] degan hatolik olasiz. 
+
+Documentationda tushunmagan joylarizni Telegramdan **=>**<a href="https://t.me/jareer111" target="blank"><img align="center" src="https://cdn-icons-png.flaticon.com/128/2111/2111646.png" alt="jareer111" height="30" width="35" /></a> yozing tushuntiraman. </p> 
