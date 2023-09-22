@@ -1,8 +1,12 @@
 # Onest Filter Documentation
 
-Bu dokumentatsiya Onest filtrlarini ishlatish haqida ma'lumotlar taqdim etadi.
+ Bu dokumentatsiya Onest API da filter bilan qanaqa ishlash haqida ma'lumotlar taqdim etadi.
+<h2></h2> 
 
-### Filter tavsifi
+![image](https://github.com/jareer111/jareer111/assets/113532802/1406524d-2073-423e-a90c-5b52d472b588)
+
+
+<h3>💬 Filter tavsifi</h3>
 
 - **"filter_key"**: Bu filter qilmoqchi bulgan fildizni nomi.
 - **"value"**: Bu filter qilmoqchi bulgan fildizni qiymati.
