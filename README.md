@@ -10,8 +10,7 @@
 
 - **"filter_key"**: Bu filter qilmoqchi bulgan fildizni nomi.
 - **"value"**: Bu filter qilmoqchi bulgan fildizni qiymati.
-- **"operator"**: Bu filter qilmoqchi bulgan fildizni operatori (bu operatorlar: "cn", "eq", "gte", "lte").
-  - "cn" -> CONTAINS
+- **"operator"**: Bu filter qilmoqchi bulgan fildizni operatori (bu operatorlar: "eq", "gte", "lte").
   - "eq" -> EQUAL
   - "gte" -> GREATER THAN OR EQUAL
   - "lte" -> LESS THAN OR EQUAL
@@ -22,25 +21,10 @@
 
 ### Filterlar
 
-1. **"cn" -> CONTAINS** operatori orqali **["title"]** bo'yicha filter qilish:
 
-   **Example:**
-```json
-{
-  "filters": [
-    {
-      "filter_key": "title",
-      "value": "chilonzor 12",
-      "operator": "cn",
-      "data_option": "all"
-    }
-  ]
-}
-```
+**1. "eq" -> EQUAL** operatori orqali **["amenity", "districtName", "regionName", "price", "area", "countOfRooms", "floor", "countOfFloors"]** bo'yicha filter qilish mumkin:
 
-**2. "eq" -> EQUAL** operatori orqali **["amenity", "districtName", "regionName", "price", "area", "countOfRooms", "floor", "countOfFloors"]** bo'yicha filter qilish mumkin:
-
-2.1 Amenities (udobstva) uchun:
+1.1 Amenities (udobstva) uchun:
 
    **Example:**
 ```json
@@ -61,7 +45,7 @@
    ]
  }
 ```
-  2.2 Agar siz **districtName** (Ташкентский район) ni filter qilmoqchi bulsayiz unda  siz shu kurinishda filterni shakllantirishingiz kerak.
+  1.2 Agar siz **districtName** (Ташкентский район) ni filter qilmoqchi bulsayiz unda  siz shu kurinishda filterni shakllantirishingiz kerak.
    **"value"** ga District dagi **'search_name'** fildini kiritasiz **ex:** 'yakkasaroy' yoki 'yashnobod'...
 
    **Example:**
@@ -79,7 +63,7 @@
 
 ```
 
-  2.3 Agar siz **regionName** (Ташкент) ni filter qilmoqchi bulsayiz unda  siz shu kurinishda filterni shakllantirishingiz kerak.
+  1.3 Agar siz **regionName** (Ташкент) ni filter qilmoqchi bulsayiz unda  siz shu kurinishda filterni shakllantirishingiz kerak.
    **"value"** ga Region dagi **'search_name'** fildini kiritasiz **ex:** 'tashkent' yoki 'fergana'...
 
    **Example:**
@@ -96,7 +80,7 @@
    }
    ```
 
- 2.4 Agar siz **'countOfRooms'** (xona soni) ni **'n'** ga teng busin desangiz. **"countOfRooms"** ni urniga **["price", "area", "countOfRooms", "floor", "countOfFloors"]** ishlatishingiz mumkin.
+ 1.4 Agar siz **'countOfRooms'** (xona soni) ni **'n'** ga teng busin desangiz. **"countOfRooms"** ni urniga **["price", "area", "countOfRooms", "floor", "countOfFloors"]** ishlatishingiz mumkin.
      Eslatma agar siz bitta filterda bir bitta fildni bir necha marta ishlatmoqchi bulsangiz unda **"data_option"** ni **"any"** qilib qo'yishingiz kerak.
 
    **Example:**
@@ -118,9 +102,9 @@
    }
    ```
 
-**3. "gte"** & **"lte"** => Bu operator orqali siz **["price", "area", "countOfRooms", "floor", "countOfFloors"]** buyicha filter qilishingiz mumkin.
+**2. "gte"** & **"lte"** => Bu operator orqali siz **["price", "area", "countOfRooms", "floor", "countOfFloors"]** buyicha filter qilishingiz mumkin.
 
- 3.1 Agar siz **"price"** (narx) ni filter qilmoqchi bulsayiz unda  siz shu kurinishda filterni shakllantirishingiz kerak.
+ 2.1 Agar siz **"price"** (narx) ni filter qilmoqchi bulsayiz unda  siz shu kurinishda filterni shakllantirishingiz kerak.
      **"price"** ni urniga  **["price", "area", "countOfRooms", "floor", "countOfFloors"]** ga ham shu kurinishda filter shakillantirishingiz mumkin.
 
    **Example:**
@@ -142,7 +126,7 @@
    }
    ```
 
-**4.** Siz bir vaxtning uzida bir nechta fiterlarni shakillantirishingiz mumkin.
+**3.** Siz bir vaxtning uzida bir nechta fiterlarni shakillantirishingiz mumkin.
 
    **Example:**
    
@@ -150,11 +134,6 @@
         {
          "filters": [
             {
-             "filter_key": "title",
-             "value": "Reklama nomi misol uchun",
-             "operator": "cn",
-             "data_option": "all"
-            },{
              "filter_key": "amenity",
              "value": "lux",
              "operator": "eq",
