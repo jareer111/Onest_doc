@@ -3,7 +3,7 @@
  Bu dokumentatsiya Onest API da filter bilan qanaqa ishlash haqida ma'lumotlar taqdim etadi.
 <h2></h2> 
 
-![image](https://github.com/jareer111/jareer111/assets/113532802/1406524d-2073-423e-a90c-5b52d472b588)
+![image](https://github.com/jareer111/Onest_doc/assets/113532802/990dfa62-d4c1-49e8-81d2-6defd3977c06)
 
 
 <h3>💬 Filter tavsifi</h3>
