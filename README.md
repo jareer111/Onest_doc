@@ -164,8 +164,17 @@
              "operator": "lte",
              "data_option": "any"
             }
-          ]
-        }
+          ],
+       "sorts": [
+        {
+          "key": "price",
+          "direction": "ASC"
+        },{
+          "key": "createdAt",
+          "direction": "DESC"
+         }
+       ]
+      }
 ```
 
 _Eslatma!:_ Agar siz shu operatorlarning urniga  boshqa operator ishlatsayiz  [**"Unsupported filter operation!"** ] degan hatolik olasiz. 
